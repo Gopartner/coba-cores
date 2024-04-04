@@ -1,17 +1,16 @@
-//import { useState } from 'react'
-//import reactLogo from './assets/react.svg'
-//import viteLogo from '/vite.svg'
-//import './App.css'
-import WebExternal from './components/WebExternal';
+import React from 'react';
+import WebsiteViewer from './components/WebsiteViewer';
 
-function App() {
-  
+const App = () => {
+
+  const ey = "https://www.ey.com/en_gl";
 
   return (
-    <>
-    <WebExternal />
-    </>
-  )
-}
+    <div>
+      <WebsiteViewer url={ey} />
+    </div>
+  );
+};
 
-export default App
+export default App;
+
